@@ -3,11 +3,11 @@
 var express = require('express');
 var server = express();
 
-const HOST = 'localhost';
-const PORT = '1111';
+const HOST = '0.0.0.0';
+const PORT = '8080';
 
 server.get('/', function (req, res, next) {
-    res.send('Hello Word');
+    res.send('Hello Worddddd');
     next();
 });
 
