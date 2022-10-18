@@ -16,7 +16,7 @@ var romanToInt = function(s) {
         var valueOfAffter = map.get(s[i + 1]);
         var valueOfThis = map.get(s[i]);
         var check = false;
-        if (s[i] === 'I' || s[i] ===  'X' || s[i] ===  'C') {
+        if (s[i] === 'I' || s[i] === 'X' || s[i] === 'C') {
             if (valueOfAffter === valueOfThis * 5 || valueOfAffter === valueOfThis * 10) {
                 result += valueOfAffter - valueOfThis;
                 i++;
